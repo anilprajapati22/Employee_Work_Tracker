@@ -1,0 +1,76 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: myFont;
+  src: url("Oswald/Oswald-VariableFont_wght.ttf");
+}
+.wrapper
+{
+	margin: 7%;
+	padding: 1%;
+	background: #FFFFFF;
+	border-style: solid;
+	border-width: medium;
+	border-color: #ff5335;
+
+}
+#demo_min,#demo
+{
+	display: inline;
+	font-family: myFont;
+	font-size: 200%;
+}
+
+.control
+{
+	
+}
+
+.log
+{
+	font-family: myFont;
+	color: #2A2727;
+	font-size: 100%;
+}
+
+.sub,#btnEmp
+{
+	margin: 1%;
+	margin-left: 0;
+	background-color: #ff5335;
+	outline: none;
+	border: none;
+	color: #FFFFFF;
+	font-family: myFont;
+	font-size: 120%;
+	transition-duration: 0.4s;
+}
+
+#lableOfWork
+{
+	border-style: none;
+	border-bottom-style: solid;
+}
+
+input[type=text]:focus {
+  border-bottom-color: #ff5335;
+	outline: none;
+  
+}
+input[placeholder]:focus { color: #ff5335; }
+
+#idoldWork,#projectDiv
+{
+	margin: 2%;
+	background: #D9CECF;
+	font-family: myFont;
+	color: #2A2727
+}
+#privious_work_name,#CurrentWorkLable1,#divhis{
+	margin: 2%;
+	background: #FF0000;
+	font-family: myFont;
+	color: #FFFFFF;
+    padding : 0.5%;
+     
+}

@@ -1,0 +1,86 @@
+Admin
+
+{
+	"_id" : ObjectId("5ee119f5a4d1fa375f55d4a6"),
+	"name" : "sgn",
+	"passwd" : "sgn0123",
+	"project" : [
+		"sgn01p"
+	],
+	"is_admin" : 1,
+	"com_name" : "sgn_com"
+}
+
+Employee
+
+{
+	"_id" : ObjectId("5ee119f5a4d1fa375f55d4a7"),
+	"name" : "sgn01",
+	"passwd" : "sgn0123",
+	"is_admin" : 0,
+	"com_name" : "sgn_com",
+	"project" : [
+		"sgn01p",
+		"sgn02p"
+	],
+	"sgn02p" : [ ],
+	"sgn01p" : [
+		
+		[
+			ISODate("2020-06-23T14:37:20.347Z"), // work starting time
+			ISODate("2020-06-23T14:38:32.914Z"), // work ending time
+			72, // total seconds of work
+			"sgnFifthWork", // title of work
+			19, // key press percentage
+			42, // mouse work percentage
+			[  // browser history
+				[
+					"https://duckduckgo.com/?t=ffab&q=sgnonsjkhjbmjamjkhjcsjkbjjbjamjomjsmjsmjsmjlmjgbjkbjgbjhdjgdjjbjdjdjdjdjmpjg",
+					"sgnonsjkhjbmjamjkhjcsjkbjjbjamjomjsmjsmjsmjlmjgbjkbjgbjhdjgdjjbjdjdjdjdjmpjg at DuckDuckGo"
+				],
+				[
+					"https://duckduckgo.com/?t=ffab&q=sgnonsjkhjbmjamjkhjcsjkbjjbjamjomjsmjsmjsmjlmjgbjkbjgbjhdjgdjjbjdjdjdjdjmpjg&ia=web",
+					"sgnonsjkhjbmjamjkhjcsjkbjjbjamjomjsmjsmjsmjlmjgbjkbjgbjhdjgdjjbjdjdjdjdjmpjg at DuckDuckGo"
+				],
+				[
+					"https://mail.google.com/mail/u/2/#inbox",
+					"Inbox (66) - sgnons11@gmail.com - Gmail"
+				],
+				[
+					"https://duckduckgo.com/?t=ffab&q=sgnons+this+is+sgn",
+					"sgnons this is sgn at DuckDuckGo"
+				],
+				[
+					"https://duckduckgo.com/?t=ffab&q=sgnons+this+is+sgn&ia=web",
+					"sgnons this is sgn at DuckDuckGo"
+				]
+			],
+			[
+				"sgn0126190.png",
+				"sgn0126191.png",
+				"sgn0126192.png",
+				"sgn0126193.png",
+				"sgn0126204.png",
+				"sgn0126205.png",
+				"sgn0126206.png",
+				"sgn0126207.png",
+				"sgn0126208.png",
+				"sgn0126209.png",
+				"sgn01262110.png"
+			]
+
+		]
+	]
+}
+
+admin :- login,add project ,add emp to project
+emp :- login,select project , add lable to work,start counter ,stop counter and add data with lable in databse
+// includ keyboard work percentage it will check by append keystrok seconds and than count it then it will find parcentage with total seconds of work
+
+//including maouse capture and firefox history in linux (05)
+//chrom browser history will fetch (06)
+//add page in emp to see all works details
+//take ss in 10 sec, and save list of ss names in db (07)
+//add some design ni login,home,timer page
+//add page admin can see details of work of employee(09)
+//add project remove function(10)

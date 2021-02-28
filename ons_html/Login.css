@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+  font-family: myFont;
+  src: url("Oswald/Oswald-VariableFont_wght.ttf");
+}
+.wrapper
+{
+	margin: 1%;
+	background: #FFFFFF;
+	display: flex;
+	border-style: solid;
+	border-width: medium;
+	border-color: #ff5335;
+
+}
+
+.content2
+{
+	flex: 1;
+	background: #242424;
+	padding: 5%;
+}
+
+.content1
+{
+	background: #FFFFFF;
+	padding-top: 1%;
+	margin-right: 60%;
+}
+
+.logo
+{
+	margin-left: 10%;
+	margin-bottom: 10%;
+}
+
+.ttle
+{
+	margin-left: 10%;
+	font-family: myFont;
+	color: antiquewhite;
+	font-size: 400%;
+}
+
+.log
+{
+	font-family: myFont;
+	color: #2A2727;
+	font-size: 400%;
+	margin-left: 80%;
+}
+
+#empid,#password01
+{
+	margin: 7%;
+	margin-left: 50%;	
+	border-style: none;
+	border-bottom-style: solid;
+	padding: 7%;
+}
+
+input[type=text]:focus {
+  border-bottom-color: #ff5335;
+	outline: none;
+  
+}
+input[placeholder]:focus { color: #ff5335; }
+
+.sub
+{
+	margin-left: 90%;
+	margin-top: 10%;
+	background-color: #ff5335;
+	outline: none;
+	border: none;
+	color: #FFFFFF;
+	font-family: myFont;
+	font-size: 120%;
+	transition-duration: 0.4s;
+	padding: 1%;
+	padding-bottom: 3%;
+	padding-left: %;
+	padding-right: 10%;
+
+}
+
+.sub:hover
+{
+  background-color: #ff5335;
+  color: white;
+	cursor: pointer;
+}

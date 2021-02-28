@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head> 
+	<link rel="stylesheet" type="text/css" href="timer.css">
+    <script type="text/javascript" src="/eel.js"></script>
+    <script type="text/javascript" src="start_stop_counter.js"></script>
+
+</head>
+<body>
+
+	<div class="wrapper" id="maindiv">
+<h6 style="color:#DEDEAD;margin:0%">sgn ons jkh jam jbm jcs jkhd jam jjb jom jsm jlm jg jsm jkb jsm jjb jgb jd jd jd jmt jg</h6>
+		<div id="lableDiv" class="log">
+
+			<input type="text" placeholder="Enter task to be completed" id="lableOfWork"><br>
+			<input type="button" onclick="addLableToWork(this);" value="Add Task" class="sub">
+
+		</div>
+		<h1 id="setUname" class="log">   </h1>
+		<div class="control">
+		<p id="demo_min"> 0:</p>
+		<p id="demo">0</p>
+		</div>
+		
+		<br>
+		
+		<input type="image" onclick="clock()" src="icons8-start-50.png">
+		<input type="image" src="icons8-pause-squared-50.png" onclick="hold_timer()">
+		<input type="image" src="icons8-close-window-50.png" onclick="stop_timer()">
+		
+			
+		<br><button onclick="goBack();" class="sub">Back</button>
+    
+<center>		<p id="privious_work_name">  </p>  </center>
+		
+		<div id="sgn_old_work">
+
+
+		</div>
+	</div>
+</body>
+</html>
+
